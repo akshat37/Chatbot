@@ -3,7 +3,10 @@
 import cohere
 
 # Initialize Cohere client (store API key in environment variable instead of hardcoding)
-co = cohere.Client("FV3QYFi8I4dMvT9MlZxMi2iClaE3xaMcVIO6mbsa")
+co = cohere.Client("
+# YOUR COHERE GENERATED API KEY
+                   "
+)
 
 def chat_with_cohere(prompt):
     response = co.chat(
@@ -20,3 +23,4 @@ if __name__ == "__main__":
 
         response = chat_with_cohere(user_input)
         print("Chatbot:", response)
+
